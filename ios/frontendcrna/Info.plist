@@ -28,9 +28,13 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>localhost</key>
+			<key>10.0.0.168:3000</key>
 			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionRequiresForwardSecrecy</key>
 				<true/>
 			</dict>
 		</dict>
@@ -51,5 +55,9 @@
 	<false/>
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
+  <!-- 🏊 Motion -->
+  <key>NSMotionUsageDescription</key>
+  <string>This app needs to be able to access your motion use</string>
+
 </dict>
 </plist>
